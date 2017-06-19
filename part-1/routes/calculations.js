@@ -4,6 +4,7 @@ const router = express.Router()
 router.get("/", function(req, res) {
 	res.send("Go to a real route to see some calculation magic")
 })
+
 router.get("/zero", function(req, res) {
 	res.send("0")
 })

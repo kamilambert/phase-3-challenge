@@ -54,13 +54,13 @@ response: 18
 
 ### Requirements
 
-- [ ] 10: All files are stored under the part-1/ folder
-- [ ] 10: All dependencies are specified in a package.json file
-- [ ] 10: Web server can be started with npm start command
-- [ ] 20: GET requests to the /zero route respond with plain text 0
-- [ ] 20: GET requests to the /add route add the two numbers provided in the query string variables a and b and respond with the result
-- [ ] 20: GET requests to the /subtract route subtract the value of the query string variable b from the query string variable a and respond with the result
-- [ ] 20: GET requests to the /double/:number route doubles the number provided in the URL (in place of :number) and responds with the result
+- [x] 10: All files are stored under the part-1/ folder
+- [x] 10: All dependencies are specified in a package.json file
+- [x] 10: Web server can be started with npm start command
+- [x] 20: GET requests to the /zero route respond with plain text 0
+- [x] 20: GET requests to the /add route add the two numbers provided in the query string variables a and b and respond with the result
+- [x] 20: GET requests to the /subtract route subtract the value of the query string variable b from the query string variable a and respond with the result
+- [x] 20: GET requests to the /double/:number route doubles the number provided in the URL (in place of :number) and responds with the result
 
 ## Part 2: Database for grocery store & tests
 
