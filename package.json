@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./part-1/app.js",
-		"create-db": "psql < /Users/kamilalambert/Desktop/Projects/phase-3-challenge/part-2/schema.sql",
-		"load-data": "psql < /Users/kamilalambert/Desktop/Projects/phase-3-challenge/part-2/load-data.sql"
+    "create-db": "psql < /Users/kamilalambert/Desktop/Projects/phase-3-challenge/part-2/schema.sql",
+    "load-data": "psql < /Users/kamilalambert/Desktop/Projects/phase-3-challenge/part-2/load-data.sql"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-		"pg": "^6.3.0"
+    "pg": "^6.3.0",
+    "pg-promise": "^5.9.3"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
