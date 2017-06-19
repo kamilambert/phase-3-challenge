@@ -3,6 +3,9 @@ const app = express()
 const routes = require("./routes/calculations")
 const router = express.Router()
 const path = require("path")
+const bodyParser = require("body-parser")
+
+app.use(bodyParser.urlencoded({extended: false}))
 
 // app.set("views", path.join(__dirname, "views"))
 // app.set("view engine", "pug")
