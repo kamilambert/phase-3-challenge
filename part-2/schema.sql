@@ -1,7 +1,7 @@
 DROP DATABASE IF EXISTS grocery_store;
 CREATE DATABASE grocery_store;
 
-/c grocery_store
+\c grocery_store
 
 DROP TABLE IF EXISTS grocery_items;
 CREATE TABLE grocery_items(
