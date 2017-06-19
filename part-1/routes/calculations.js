@@ -8,8 +8,17 @@ router.get("/zero", function(req, res) {
 router.get("/add", function(req, res) {
 	const a = parseInt(req.query.a)
 	const b = parseInt(req.query.b)
-	const c = a + b
-	res.send(`${c}`)
+	res.send(`${a + b}`)
 })
+
+router.get("/subtract", function(req, res) {
+	const a = parseInt(req.query.a)
+	const b = parseInt(req.query.b)
+	res.send(`${a - b}`)
+})
+
+
+
+
 
 module.exports = router
