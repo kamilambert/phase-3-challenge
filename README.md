@@ -76,26 +76,26 @@ Then, use pg-promise and Mocha + Chai to write and test database queries.
 
 ### Requirements
 
-- [ ] 10: All files are stored under the part-2/ folder
-- [ ] 10: Database schema (all CREATE TABLE statements) is defined in a file schema.sql
-- [ ] 10: SQL script to insert grocery seed data and load from CSV is created in a file load-data.sql
-- [ ] 10: All database query functions are written in a file database.js, and tests for queries are written in a file database_test.js
+- [x] 10: All files are stored under the part-2/ folder
+- [x] 10: Database schema (all CREATE TABLE statements) is defined in a file schema.sql
+- [x] 10: SQL script to insert grocery seed data and load from CSV is created in a file load-data.sql
+- [x] 10: All database query functions are written in a file database.js, and tests for queries are written in a file database_test.js
 
 Implement these functions in database.js using pg-promise to make the following queries:
 
-- [ ] 20: allItems() : Find the IDs, names, prices, and sections for all grocery items
-- [ ] 20: itemsInSection(<section>) : Find the IDs and names of all grocery items in the given section
-- [ ] 20: cheapItems() : Find the IDs and prices of all grocery items that cost less than $10.00, ordered from lowest to highest price
-- [ ] 20: countItemsInSection(<section>) : Get the count of all grocery items in the given section
-- [ ] 20: mostRecentOrders() : Find the IDs and order dates for the 10 most recent orders
-- [ ] 20: lastShopperName() : Find the shopper's name who made the most recent order
-- [ ] 20: orderTotal(<ID>) : Find the sum of all prices for items for a specific order
+- [x] 20: allItems() : Find the IDs, names, prices, and sections for all grocery items
+- [x] 20: itemsInSection(<section>) : Find the IDs and names of all grocery items in the given section
+- [x] 20: cheapItems() : Find the IDs and prices of all grocery items that cost less than $10.00, ordered from lowest to highest price
+- [x] 20: countItemsInSection(<section>) : Get the count of all grocery items in the given section
+- [x] 20: mostRecentOrders() : Find the IDs and order dates for the 10 most recent orders
+- [x] 20: lastShopperName() : Find the shopper's name who made the most recent order
+- [x] 20: orderTotal(<ID>) : Find the sum of all prices for items for a specific order
 
 Write tests with Mocha + Chai in database_test.js that assert:
 
-- [ ] 20: A call to itemsInSection("bulk") returns the items "Flour", "Pasta", and "Rice"
-- [ ] 20: A call to cheapItems() returns the item "Fish" as the first item and "Honey" as the last item
-- [ ] 20: A call to countItemsInSection("packaged") returns 5
+- [x] 20: A call to itemsInSection("bulk") returns the items "Flour", "Pasta", and "Rice"
+- [x] 20: A call to cheapItems() returns the item "Fish" as the first item and "Honey" as the last item
+- [x] 20: A call to countItemsInSection("packaged") returns 5
 
 ## Part 3: Web interface for grocery store
 
