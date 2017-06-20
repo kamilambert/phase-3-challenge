@@ -19,9 +19,9 @@ Each requirement has a point value. A fully complete requirement gets full point
 
 ## General Requirements
 
-- [ ] 10: Solution is in a public repository called phase-3-challenge
-- [ ] 10: Solution repository has 3 folders: part-1, part-2, and part-3.
-- [ ] 20: Git history shows frequent commits.
+- [x] 10: Solution is in a public repository called phase-3-challenge
+- [x] 10: Solution repository has 3 folders: part-1, part-2, and part-3.
+- [x] 20: Git history shows frequent commits.
 
 ## Part 1: Simple web app
 
@@ -107,11 +107,11 @@ The initial layout has already been provided for you in the grocer.html and groc
 
 ### Requirements
 
-- [ ] 10: All files are stored under the part-3/ folder
-- [ ] 20: No third party CSS or JS libraries are used (all code must be written from scratch)
-- [ ] 10: HTML, CSS, and JS are separated into their own files.
-- [ ] 20: Clicking on "Add to cart" will update the number displayed next to the "Cart" button to show the total number of items in the user's cart
-- [ ] 20: Clicking on the "Cart" button will show the cart modal with a list of all items added
-- [ ] 20: Clicking on the "Clear" button in the cart modal removes all items from the cart
-- [ ] 20: Clicking on the "X" button in the cart modal closes the modal
+- [x] 10: All files are stored under the part-3/ folder
+- [x] 20: No third party CSS or JS libraries are used (all code must be written from scratch)
+- [x] 10: HTML, CSS, and JS are separated into their own files.
+- [x] 20: Clicking on "Add to cart" will update the number displayed next to the "Cart" button to show the total number of items in the user's cart
+- [x] 20: Clicking on the "Cart" button will show the cart modal with a list of all items added
+- [x] 20: Clicking on the "Clear" button in the cart modal removes all items from the cart
+- [x] 20: Clicking on the "X" button in the cart modal closes the modal
 - [ ] 20: The "Total" in the cart modal shows the calculated sum of all item prices
