@@ -1,4 +1,8 @@
 const pgp = require("pg-promise")
+const promise = require("bluebird")
+
+const connectionString = 'postgres://localhost:3000/grocery_store'
+const db = pgp(connectionString)
 
 function allItems() {
 	return db.any('SELECT * FROM grocery_items')
@@ -24,6 +28,6 @@ function lastShopperName() {
 	return db.any('SELECT shoppers.shopper_name FROM orders INNER JOIN shoppers ON shoppers.shopper_id=orders.shopper_id ORDER BY order_date DESC LIMIT 1')
 }
 
-function orderTotal(orderNumber) {
-	return db.any()
+function orderTotal(orderID) {
+	return db.any('SELECT SUM(price) FROM grocery_items LEFT JOIN orders on grocery_items.name = orders.name WHERE order_id = $1', orderID)
 }
