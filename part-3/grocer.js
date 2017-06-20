@@ -1,41 +1,27 @@
-
 let shoppingCart = []
-const cartPrices = []
-// cartButton = document.getElementById("cart-content")
+let cartPrices = []
 
 function clearCart() {
 	shoppingCart = []
 	document.getElementById("cart-content").innerHTML = ""
 }
 
-function getTotal(array) {
-	return Math.round((array.reduce((prev, curr) => prev + curr, 0)) * 100) / 100
+function getTotal(cartPrices) {
+	return Math.round((cartPrices.reduce((prev, curr) => prev + curr, 0)) * 100) / 100
 }
 
-
-// function makeCartList(array) {
-// 	let div = document.getElementById("cart-content")
-// 	let ul = document.createElement("ul")
-//
-// 	for (let i = 0; i < array.length; i++) {
-// 		let li = document.createElement('li')
-// 		li.appendChild(document.createTextNode(array[i]))
-//
-// 		div.appendChild(ul)
-// 	}
-// }
-//
-// makeCartList(shoppingCart)
+getTotal(cartPrices)
+let total = getTotal(cartPrices)
 
 if (!shoppingCart) {
 	document.getElementById('cart-item-count').innerHTML = '0'
+	document.getElementById('cart-content').innerHTML = ""
 } else {
 	document.getElementById('cart-item-count').innerHTML = shoppingCart.length
 }
 
 
-// document.getElementById('cart-total').innerHTML = getTotal(cartPrices)
-
+document.getElementById('cart-total').innerHTML = "Total: " + total
 
 document.querySelector("#cart-button").addEventListener("click", function() {
 	document.getElementById("cart-content").innerHTML = shoppingCart
