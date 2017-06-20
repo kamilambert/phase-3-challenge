@@ -132,7 +132,7 @@ body {
     font-size: 22px;
     }
 
-.lightbox .content {
+.lightbox .cart-contents {
     display: block;
     padding: 10px 0 0 0px;
     font-size: 18px;
@@ -165,4 +165,8 @@ body {
     /** Reveals lightbox when cart button is pushed */
     display: block;
     outline: none;
+}
+
+#cart-total {
+	float: right;
 }
