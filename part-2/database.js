@@ -1,7 +1,7 @@
-const pgp = require("pg-promise")
+const pgp = require("pg-promise")()
 const promise = require("bluebird")
 
-const connectionString = 'postgres://localhost:3000/grocery_store'
+const connectionString = 'postgres://localhost:5432/grocery_store'
 const db = pgp(connectionString)
 
 function allItems() {
@@ -9,7 +9,8 @@ function allItems() {
 }
 
 function itemsInSection(section) {
-	return db.any('SELECT (id, name) FROM grocery_items WHERE id=$1', section)
+    db.any('SELECT id, name FROM grocery_items WHERE section = $1', section)
+    .then(console.log)
 }
 
 function cheapItems() {
@@ -17,7 +18,7 @@ function cheapItems() {
 }
 
 function countItemsInSection(section) {
-	return db.any('SELECT count(*) as "Number of Items" FROM grocery_items WHERE section='$1'', section)
+    db.any('SELECT COUNT(id) FROM grocery_items WHERE section = $1', section)
 }
 
 function mostRecentOrders() {
