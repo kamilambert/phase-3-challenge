@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create-db": "psql < /Users/kamilalambert/Desktop/Projects/phase-3-challenge/part-2/schema.sql"
+    "create-db": "psql < ./schema.sql",
+		"load-data": "psql < ./load-data.sql"
   },
   "repository": {
     "type": "git",

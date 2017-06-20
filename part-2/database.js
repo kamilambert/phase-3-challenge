@@ -13,7 +13,7 @@ function cheapItems() {
 }
 
 function countItemsInSection(section) {
-	return db.any('SELECT count(*) as "Number of Items" FROM grocery_items WHERE section=$1', section)
+	return db.any('SELECT count(*) as "Number of Items" FROM grocery_items WHERE section='$1'', section)
 }
 
 function mostRecentOrders() {
@@ -21,8 +21,9 @@ function mostRecentOrders() {
 }
 
 function lastShopperName() {
-	return db.any('SELECT shoppers.shopper_name FROM orders
-		INNER JOIN shoppers ON shoppers.shopper_id=orders.shopper_id
-		ORDER BY order_date
-		DESC LIMIT 1')
+	return db.any('SELECT shoppers.shopper_name FROM orders INNER JOIN shoppers ON shoppers.shopper_id=orders.shopper_id ORDER BY order_date DESC LIMIT 1')
+}
+
+function orderTotal(orderNumber) {
+	return db.any()
 }
