@@ -1,6 +1,5 @@
 let shoppingCart = []
 let total = 0
-let cartItemCount = 0
 
 function clearCart() {
 	shoppingCart = []
@@ -16,6 +15,8 @@ function buildShoppingList(array) {
     list.appendChild(p)
   }
 }
+
+// Should refactor all querySelector statements into single loop to handle click events
 
 document.querySelector("#cart-button").addEventListener("click", function() {
 	buildShoppingList(shoppingCart)

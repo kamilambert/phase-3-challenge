@@ -115,10 +115,7 @@ body {
 }
 
 .lightbox .box {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-   	min-width: 500px;
+		width: 400px;
     margin: 2% auto;
     padding: 20px;
     background-color: #FFF;
@@ -161,10 +158,9 @@ body {
     color: #333333;
     }
 
+/** Reveals lightbox when cart button is pushed */
 .lightbox:target {
-    /** Reveals lightbox when cart button is pushed */
     display: block;
-    outline: none;
 }
 
 #cart-total {

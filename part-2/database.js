@@ -9,9 +9,7 @@ function allItems() {
 }
 
 function itemsInSection(section) {
-    db.any("SELECT id, name FROM grocery_items WHERE section = $1", section)
-		.then(console.log)
-		.catch(console.log)
+    return db.any("SELECT id, name FROM grocery_items WHERE section = $1", section)
 }
 
 function cheapItems() {
@@ -19,7 +17,7 @@ function cheapItems() {
 }
 
 function countItemsInSection(section) {
-    db.any("SELECT COUNT(id) FROM grocery_items WHERE section = $1", section)
+    return db.any("SELECT COUNT(id) FROM grocery_items WHERE section = $1", section)
 }
 
 function mostRecentOrders() {
