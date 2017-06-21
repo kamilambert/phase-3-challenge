@@ -27,7 +27,7 @@ Each requirement has a point value. A fully complete requirement gets full point
 
 Build a very basic web app to perform basic calculations on numbers supplied in the URL.
 
-Use Express. You don't need to use an HTML templater like EJS or Pug, just respond with plain text.
+Use Express. You don"t need to use an HTML templater like EJS or Pug, just respond with plain text.
 
 The web server should provide the following routes:
 
@@ -66,9 +66,9 @@ response: 18
 
 Build a small PostgreSQL database for a grocery store, then connect and write queries using Node.js. Same idea as in part 3, but focused on the database side.
 
-Design a database to store grocery items, shoppers, and shoppers' orders. Let's call the database grocery_store (so clever, I know).
+Design a database to store grocery items, shoppers, and shoppers" orders. Let"s call the database grocery_store (so clever, I know).
 
-You'll need to design the schema and write some SQL statements to insert data. Look closely at the requirements to determine how to design your schema.
+You"ll need to design the schema and write some SQL statements to insert data. Look closely at the requirements to determine how to design your schema.
 
 Use the provided grocery item data to seed your grocery items table, and write some custom insert statements to add 3-5 rows to the shoppers and orders tables and any join tables you may need to connect them all.
 
@@ -88,7 +88,7 @@ Implement these functions in database.js using pg-promise to make the following 
 - [x] 20: cheapItems() : Find the IDs and prices of all grocery items that cost less than $10.00, ordered from lowest to highest price
 - [x] 20: countItemsInSection(<section>) : Get the count of all grocery items in the given section
 - [x] 20: mostRecentOrders() : Find the IDs and order dates for the 10 most recent orders
-- [x] 20: lastShopperName() : Find the shopper's name who made the most recent order
+- [x] 20: lastShopperName() : Find the shopper"s name who made the most recent order
 - [x] 20: orderTotal(<ID>) : Find the sum of all prices for items for a specific order
 
 Write tests with Mocha + Chai in database_test.js that assert:
@@ -110,8 +110,8 @@ The initial layout has already been provided for you in the grocer.html and groc
 - [x] 10: All files are stored under the part-3/ folder
 - [x] 20: No third party CSS or JS libraries are used (all code must be written from scratch)
 - [x] 10: HTML, CSS, and JS are separated into their own files.
-- [x] 20: Clicking on "Add to cart" will update the number displayed next to the "Cart" button to show the total number of items in the user's cart
+- [x] 20: Clicking on "Add to cart" will update the number displayed next to the "Cart" button to show the total number of items in the user"s cart
 - [x] 20: Clicking on the "Cart" button will show the cart modal with a list of all items added
 - [x] 20: Clicking on the "Clear" button in the cart modal removes all items from the cart
 - [x] 20: Clicking on the "X" button in the cart modal closes the modal
-- [ ] 20: The "Total" in the cart modal shows the calculated sum of all item prices
+- [x] 20: The "Total" in the cart modal shows the calculated sum of all item prices
